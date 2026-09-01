@@ -14,132 +14,147 @@
 
     <body>
 
-        <h1>⛅ Weather App</h1>
+        <div class="app">
 
-        <p>Check the current weather of any city</p>
+            <aside class="sidebar">
 
-        <div class="search-section">
+                <div class="logo">
+                    🌦️
+                    <span>Weather</span>
 
-            <input type="text" id="cityInput" placeholder="🔍 Enter city name...">
+                </div>
 
-            <button id="searchBtn">Search</button>
+                <nav class="sidebar-nav">
 
+                    <button>▦</button>
+                    <button>🗺️</button>
+                    <button>📍</button>
+                    <button>◉</button>
+                    <button>📅</button>
+                    <button>⚙️</button>
+
+                </nav>
+            </aside>
+
+            <main class="dashboard">
+
+                <div class="top-grid">
+
+                    <section class="current-weather">
+
+                        <div class="weather-search">🔍</div>
+
+                        <div class="weather-main">
+
+                            <div class="weather-icon">⛈️</div>
+
+                            <div class="temperature">28°C</div>
+
+                            <p class="description">Rainy Storm Clouds</p>
+                        </div>
+
+                        <div class="weather-location">
+
+                            <p>📍 Colombo, Sri Lanka</p>
+
+                            <p>📅 25 August 2026</p>
+                        </div>
+                    </section>
+
+                    <section class="highlights">
+
+                        <h2>Today's Highlights</h2>
+
+                        <div class="highlight-grid"> 
+
+                            <div class="highlight-card">
+
+                                <h3>Wind Status</h3>
+                                <strong>7.90</strong>
+                                <spam>km/h</spam>
+
+                            </div>
+
+                            
+                            <div class="highlight-card">
+
+                                <h3>Humidity</h3>
+                                <strong>84%</strong>
+                            </div>
+
+                            
+                            <div class="highlight-card">
+
+                                <h3>Visibility</h3>
+                                <strong>03</strong>
+                                <spam>km</spam>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="bottom-grid">
+
+                    <section class="forecast-section">
+
+                        <div class="section-header">
+                            <h2>5 Day Forecast</h2>
+                        </div>
+
+                        <div class="forecast-list">
+
+                            <div class="forecast-item">
+                                <span>Mon</span>
+                                <span>☀️</span>
+                                <strong>29°C</strong>
+                            </div>
+
+                            <div class="forecast-item">
+                                <span>Tue</span>
+                                <span>⛅</span>
+                                <strong>30°C</strong>
+                            </div>
+
+                            <div class="forecast-item">
+                                <span>Wed</span>
+                                <span>🌧️</span>
+                                <strong>27°C</strong>
+                            </div>
+
+                            <div class="forecast-item">
+                                <span>Thu</span>
+                                <span>⛈️</span>
+                                <strong>28°C</strong>
+                            </div>
+
+                            <div class="forecast-item">
+                                <span>Fri</span>
+                                <span>☀️</span>
+                                <strong>31°C</strong>
+                            </div>
+
+                    </section>
+
+                    <section class="map-section">
+
+                        <h2>Weather Condition Map</h2>
+
+                        <div class="weather-map">
+
+                            <p>Weather Map</p>
+
+                        </div>
+
+                    </section>
+                    
+                </div>
+
+            </main>
         </div>
-
-        <section class="current-weather">
-
-            <div class="location">
-
-                <h2 id="cityName">Colombo, Sri Lanka</h2>
-
-            </div>
-
-            <div class="weather_icon" id="weatherIcon">☀️</div>
-
-            <div class="temperature" id="temperature">29°C</div>
-
-            <p id="description">Clear Sky</p>
-
-            <p id="mainFeelsLike">
-                Feels like <strong id="feelsLike">31°C</strong>
-            </p>
-
-        </section>
-
-        <div class="weather">
-
-            <div class="weather-card">
-
-                <div class="weather-icon">💧</div>
-
-                <h3>Humidity</h3>
-
-                <strong id="humidity">78%</strong>
-
-            </div>
-
-            <div class="weather-card">
-
-                <div class="weather-icon">💨</div>
-
-                <h3>Wind</h3>
-
-                <strong id="wind">12 km/h</strong>
-
-            </div>
-
-            <div class="weather-card">
-
-                <div class="weather-icon">🌡️</div>
-
-                <h3>Feels Like</h3>
-
-                <strong id="feelsLikeCard">31°C</strong>
-
-            </div>
-
-        </div>
-
-        <p>5 DAY FORECAST</p>
-
-        <div class="forecast">
-
-            <div class="forecast-card">
-
-                <h3>Mon</h3>
-
-                <div class="forecast-icon">☀️</div>
-
-                <p>31°C </p>
-                    
-            </div>
-
-            <div class="forecast-card">
-
-                <h3>Tue</h3>
-
-                <div class="forecast-icon">⛅</div>
-
-                <p>30°C </p>
-                    
-            </div>
-
-            <div class="forecast-card">
-
-                <h3>Wed</h3>
-
-                <div class="forecast-icon">🌧️</div>
-
-                <p>27°C</p>
-                    
-            </div>
-
-            <div class="forecast-card">
-
-                <h3>Thu</h3>
-
-                <div class="forecast-icon">☁️</div>
-
-                <p>28°C </p>
-                    
-            </div>
-
-            <div class="forecast-card">
-
-                <h3>Fri</h3>
-
-                <div class="forecast-icon">☀️</div>
-
-                <p>31°C </p>
-                    
-            </div>
-
-        </div>
-
-        <button id="locationBtn">
-            📍 Use My Location
-        </button>
-
+        
     </body>
 
 </html>
