@@ -114,3 +114,31 @@ body{
     font-size: 20px;
     cursor: pointer;
 }
+
+.weather-main{
+    margin-top: 40px;
+}
+.weather-main .weather-icon{
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+.temperature{
+    font-size: 76px;
+    font-weight: 300;
+    letter-spacing: -3px;
+}
+.description{
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--muted);
+}
+
+.weather-location{
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+.weather-location p{
+    margin: 10px 0;
+    color: var(--muted);
+    font-size: 14px;
+}
