@@ -54,4 +54,63 @@ body{
     font-weight: bold;
 }
 
-.sidebar-nav
+/*sidebar*/
+.sidebar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 50px;
+}
+.sidebar-nav button{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 14px;
+    color: var(--muted);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.sidebar-nav button:hover{
+    background: var(--card-light);
+    color: var(--text);
+}
+/*dashboard*/
+.dashboard{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.top-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 25px;
+}
+.current-weather{
+    min-height: 420px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    overflow: hidden;
+}
+.weather-search{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111820;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
